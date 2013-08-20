@@ -15,7 +15,6 @@ public:
 	{
 		char Data[3145728]; // 3 Megabytes
 		memset(Data, 0, sizeof(Data));
-		short int KeyStepper = 0;
 
 		fread(Data,sizeof(char),ESSFSize,InFileHandle);
 		fclose(InFileHandle);
